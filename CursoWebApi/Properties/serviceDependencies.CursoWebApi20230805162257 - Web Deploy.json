@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "apis1": {
+      "ignored": "true",
+      "type": "apis.azure"
+    },
+    "identityapp1": {
+      "ignored": "true",
+      "type": "identityapp"
+    },
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/CursoWebApi20230805162257/providers/Microsoft.ServiceLinker/linkers/defaultConnection_703D20E431",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/cursowebapidbserver/databases/CursoWebApi_db",
+      "type": "mssql.azure",
+      "connectionId": "defaultConnection",
+      "dynamicId": null
+    }
+  }
+}
