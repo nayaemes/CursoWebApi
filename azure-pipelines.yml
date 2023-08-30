@@ -23,7 +23,7 @@ steps:
 - task: CmdLine@2
   displayName: 'Generating DB script'
   inputs:
-    script: 'dotnet ef migrations script -i -o $(Build.ArtifactStagingDirectory)\migrate.sql --project $(proyecto)'
+    script: 'dotnet ef migrations script -i -o $(Build.ArtifactStagingDirectory)\migrate.sql --project $(proyectoSource)'
 - task: DotNetCoreCLI@2
   displayName: 'Publishing App...'
   inputs:
