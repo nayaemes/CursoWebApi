@@ -2,6 +2,9 @@ using CursoWebApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//Servicio Application InsightsTelemetry desde azure
+builder.Services.AddApplicationInsightsTelemetry(op =>
+op.ConnectionString = builder.Configuration["ApplicationInsights:ConnectionStrings"]);
 var startup = new Startup(builder.Configuration);
 
 startup.ConfigureServices(builder.Services);

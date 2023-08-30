@@ -150,10 +150,7 @@ namespace CursoWebApi
 
             services.AddTransient<GeneradorEnlaces>();
             services.AddTransient<HATEOASAutorFiltrerAttribute>();
-            services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
-
-            services.AddApplicationInsightsTelemetry(Configuration["AplicationInsights:ConnectionString"]);
-
+            services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();            
 
         }
 

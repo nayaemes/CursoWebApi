@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CursoWebApi", "CursoWebApi.csproj", "{BCE11F45-BBF8-4A9A-94BD-32978BD18C36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoWebApi.Tests", "..\CursoWebApi.Tests\CursoWebApi.Tests.csproj", "{225F63F4-FA61-4921-B035-DDA9AE8F91BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CursoWebApi.Tests", "..\CursoWebApi.Tests\CursoWebApi.Tests.csproj", "{225F63F4-FA61-4921-B035-DDA9AE8F91BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
