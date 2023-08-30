@@ -12,7 +12,6 @@ pool:
 variables:
   buildConfiguration: 'Release'
   proyecto: 'CursowebApi/CursowebApi.csproj'
-
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
