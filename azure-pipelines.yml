@@ -11,7 +11,8 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  proyecto: 'CursoApiUdemy/CursoWebApi/CursoWebApi.csproj'
+  proyecto: 'CursoWebApi/CursoWebApi.csproj'
+
 
 
 steps:
@@ -24,13 +25,13 @@ steps:
 - task: CmdLine@2
   displayName: 'Generating DB script'
   inputs:
-    script: 'dotnet ef migrations script -i -o $(Build.ArtifactStagingDirectory)\migrate.sql --projects $(proyecto)'
+    script: 'dotnet ef migrations script -i -o $(Build.ArtifactStagingDirectory)\migrate.sql --project $(proyecto)'
 - task: DotNetCoreCLI@2
   displayName: 'Publishing App...'
   inputs:
     command: 'publish'
     publishWebProjects: false
-    projects: $(proyecto)
+    projects: 'CursoWebApi/CursoWebApi.csproj'
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory) --runtime win-x64 --self-contained'
     zipAfterPublish: false
     modifyOutputPath: false
