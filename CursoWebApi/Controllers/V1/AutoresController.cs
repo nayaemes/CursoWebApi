@@ -212,7 +212,7 @@ namespace CursoWebApi.Controllers.V1
         }
 
         /// <summary>
-        /// Borrar un Autor
+        /// Borrar un Autor (saludos desde azure)
         /// </summary>
         /// <param name="id">Id del autor a borrar</param>
         /// <returns></returns>
