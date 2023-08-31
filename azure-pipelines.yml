@@ -11,7 +11,7 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  proyecto: 'CursoWebApi/CursoWebApi.csproj'
+  proyecto: 'CursoApiUdemy/CursoWebApi/CursoWebApi.csproj'
 
 
 steps:
